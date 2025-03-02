@@ -1,8 +1,9 @@
-# bitirme-tezi
+# Bitirme Tezi - Multimodular Duygu Analizi
 Sude ve Rabia'nın Ultra Güzel Minnoş Bitirme Tezi Projesi
 
-Projenin repo yapısı:
+## 📂 Proje Yapısı
 
+```Projenin repo yapısı:
 bitirme-tezi/
 │── data/                  # Veri kümesi
 │   ├── raw/               # Ham veri seti (orijinal hali)
