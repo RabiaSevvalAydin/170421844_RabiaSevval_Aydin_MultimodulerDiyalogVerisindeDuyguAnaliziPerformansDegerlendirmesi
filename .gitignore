@@ -171,5 +171,4 @@ cython_debug/
 .pypirc
 
 # Local çalışma alanlarını takip etmemesi için
-notebooks/rabia_workspace/
-notebooks/sude_workspace/
+notebooks/local_workspace/
