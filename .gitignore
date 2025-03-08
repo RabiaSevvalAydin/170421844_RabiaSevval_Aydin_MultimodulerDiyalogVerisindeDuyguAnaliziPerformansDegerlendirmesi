@@ -172,3 +172,4 @@ cython_debug/
 
 # Local çalışma alanlarını takip etmemesi için
 notebooks/local_workspace/
+data/features/
