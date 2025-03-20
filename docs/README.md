@@ -5,20 +5,32 @@ Sude ve Rabia'nın Ultra Güzel Minnoş Bitirme Tezi Projesi
 ```
 bitirme-tezi/
 │── data/                  # Veri kümesi
-│   ├── raw/               # Ham veri seti (orijinal hali)
-│   ├── processed/         # Ön işlenmiş ve dönüştürülmüş veriler
 │   ├── features/          # Özellik çıkarılmış veriler
-│── src/                   # Kaynak kodlar (ana Python scriptleri)
-│   ├── preprocessing.py   # Veri temizleme ve ön işleme
-│   ├── feature_extraction.py  # Özellik çıkarımı (MFCC, spectrogram vb.)
-|   ├── model.py           # İlk model denemesi
-│── notebooks/             # Jupyter Notebook'lar (Keşifsel analiz vb.)
-│   ├── rabia_workspace    # Local çalışma alanı, git takip etmeyecek 
-│   ├── sude_workspace     # Local çalışma alanı, git takip etmeyecek
+│   ├── models/ 
+│       ├── roberta_models/
+│   ├── processed/         # Ön işlenmiş ve dönüştürülmüş veriler
+│   ├── raw/               # Ham veri seti (orijinal hali)
 │── docs/                  # Proje dökümantasyonu
 │   ├── README.md          # Proje açıklamaları
-│── environment.yml        # Conda ortamının paket bilgileri
+│── notebooks/             # Jupyter Notebook'lar (Keşifsel analiz vb.)
+│   ├── local_workspace    # Local çalışma alanı, git takip etmeyecek
+│── src/                   # Kaynak kodlar (ana Python scriptleri)
+│   ├── DialogueRNN/
+│   ├── RoBERTa/
+│       ├── roberta-large/
+│           ├── NOTE.txt
+│       ├── commonsense_model.py
+│       ├── dataloader.py
+│       ├── encoder.json
+│       ├── model.py
+│       ├── multiprocessing_bpe_encoder.py
+│       ├── roberta_feature_extract_meld.py
+│       ├── roberta_init_meld.py
+│       ├── roberta_preprocess_meld.sh
+│       ├── roberta_train_meld.sh
+│       ├── train_meld.py
 │── .gitignore             # Gereksiz dosyaları git takibinden çıkarmak için
+│── environment.yml        # Conda ortamının paket bilgileri
 ```
 - Yeni dosyalar eklendikçe güncelle, dosya sayısı çok olursa klasörler isimlerini güncellersiniz
   
