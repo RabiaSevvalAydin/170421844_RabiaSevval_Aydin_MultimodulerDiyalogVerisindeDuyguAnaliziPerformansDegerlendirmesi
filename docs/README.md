@@ -21,12 +21,13 @@ Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren ya
 
 ![MELD_diyalog_ornegi](meld_diyalog_örnegi.png)
 
+![MELD_konusmaci ifade dagilim yuzdesi](meld_konusmaci_ifade_dagilim_yuzdesi.png)
 
 ![MELD_konusmaci his dagilimi](meld_konusmaci_his_dagilimi.png)
 
 ![MELD_konusmacı duygu dagilimi](meld_konusmaci_duygu_dagilimi.png)
 
-![MELD_konusmaci ifade dagilim yuzdesi](meld_konusmaci_ifade_dagilim_yuzdesi.png)
+
 
 **IEMOCAP-Interactive Emotional Dyadic Motion Capture**
 - 5 erkek ve 5 kadından oluşan bir gruba ait ikili diyalog çiftlerinii içerir.
