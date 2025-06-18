@@ -1,6 +1,21 @@
-# Bitirme Tezi - Multimodular Duygu Analizi
-Sude ve Rabia'nın Ultra Güzel Minnoş Bitirme Tezi Projesi
+# Bitirme Projesi - Multimodüler Duygu Analizi ile Yapay Sinir Ağları
+**Öğrenciler**: Rabia Şevval Aydın, Sude Nur Tungaç
+**Danışman**: Doç. Dr. Ayşe Berna Altınel
+**Tarih**: Haziran 2025
+---
+## Proje Hakkında
+Bu proje, diyalog verileri üzerinde duygu analizini
+Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren yapay sinir ağlarının performanslarının değerlendirilerek; metin, ses ve görüntü modaliteleri için optimal yöntemlerin belirlenmesini hedefler. 
 
+**Kullanılan Veri Setleri**
+- **MELD**:
+- **IEMOCAP**:
+
+**Kullanılan Ana Modeller**
+- bcLSTM
+- DialogueRNN, RoBERTa + DialogueRNN
+- COSMIC
+---
 ## 📂 Proje Repo Yapısı
 ```
 bitirme-tezi/
@@ -13,40 +28,27 @@ bitirme-tezi/
 │   ├── feature_extraction.py  # Özellik çıkarımı (MFCC, spectrogram vb.)
 |   ├── model.py           # İlk model denemesi
 │── notebooks/             # Jupyter Notebook'lar (Keşifsel analiz vb.)
-│   ├── rabia_workspace    # Local çalışma alanı, git takip etmeyecek 
-│   ├── sude_workspace     # Local çalışma alanı, git takip etmeyecek
+│   ├── rabia_workspace    # Local çalışma alanı, git tarafından takip edilmez
+│   ├── sude_workspace     # Local çalışma alanı, git tarafından takip edilmez
 │── docs/                  # Proje dökümantasyonu
 │   ├── README.md          # Proje açıklamaları
 │── environment.yml        # Conda ortamının paket bilgileri
-│── .gitignore             # Gereksiz dosyaları git takibinden çıkarmak için
+│── .gitignore             # İstenmeyen dosyaları git takibinden çıkarmak için
 ```
-- Yeni dosyalar eklendikçe güncelle, dosya sayısı çok olursa klasörler isimlerini güncellersiniz
-  
-### 📌 Commit Mesaj Formatı  
-```
-<kategori>: <kısa açıklama>
+---
+## Sonuçlar
+**bcLSTM Modelinin MELD veri seti üzerinde duygu analizinde sınıflara ait f1-skorları ve doğruluk değerleri**
+| Modeller / Duygular           | nötr   | şaşkınlık | korku | üzüntü | sevinç | tiksinti | sinir | doğruluk |
+|-------------------------------|--------|-----------|-------|--------|--------|----------|-------|----------|
+| Base model text               | 0.6498 | 0.00      | 0.00  | 0.00   | 0.00   | 0.00     | 0.00  | 0.4812   |
+| Base model audio              | 0.4578 | 0.00      | 0.00  | 0.00   | 0.00   | 0.00     | 0.00  | 0.3390   |
+| Bimodel base text+audio       | 0.6518 | 0.0137    | 0.00  | 0.00   | 0.1240 | 0.00     | 0.272 | 0.4816   |
 
-<isteğe bağlı detaylı açıklama>
 
---------------------
-Commit kategorileri:
-feat:	Yeni bir özellik eklendiğinde kullanılır
-fix:	Hata düzeltmesi yapıldığında kullanılır
-docs:	README, dökümantasyon veya yorum satırları güncellendiğinde kullanılır
-refactor:	Kod yapısında değişiklik yapıldığında (davranış değişikliği olmadan) kullanılır
-test:	Test dosyaları eklendiğinde veya güncellendiğinde kullanılır
-chore:	Linter düzenlemeleri, bağımlılık güncellemeleri gibi küçük işlemler için kullanılır
-```
+**MELD ve IEMOCAP veri setinde DialogueRNN ve COSMIC modellerinin duygu sınıflandırmasına ait f1-skor değerleri**
 
-📌 Branch Yapısı
-```
-main → Stabil ve güncel sürüm burada tutulur.
-dev → Aktif geliştirme bu branch üzerinde yapılır.
-feature/<özellik-adı> → Yeni bir özellik geliştirildiğinde oluşturulur.
-Örnek: feature/ses-verisi-ön-isleme
-fix/<hata-adı> → Hata düzeltmeleri için kullanılır.
-Örnek: fix/veri-yolu-hatasi
-```
-- Yeni branch'ler dev üzerinden oluşturulur, tamamlandıktan sonra dev'e merge edilir.
-- Değişiklikler dev üzerinde test edildikten sonra her şey stabil ise main branch'e merge edilir.
-- Büyük değişiklikler veya hatalar için issue açılmalıdır.
+| Modeller / Veri Setleri      | MELD text | MELD audio | MELD multimodal | IEMOCAP |
+|-------------------------------|-----------|------------|-----------------|---------|
+| DialogueRNN                   | 57.27     | 43.24      | 57.68           | 60.60   |
+| RoBERTa + DialogueRNN         | 47.10     | 47.47      | 50.40           | –       |
+| RoBERTa + COSMIC              | 64.36     | –          | –               | 66.34   |
