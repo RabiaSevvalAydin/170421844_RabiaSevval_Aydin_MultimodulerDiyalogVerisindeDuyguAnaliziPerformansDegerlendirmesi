@@ -15,6 +15,8 @@ Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren ya
 - **MELD**:
 - **IEMOCAP**:
 
+![MELD_diyalog_ornegi](docs/meld_diyalog_ornegi.jpg)
+
 **Kullanılan Ana Modeller**
 - bcLSTM
 - DialogueRNN, RoBERTa + DialogueRNN
