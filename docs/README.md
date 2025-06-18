@@ -46,19 +46,15 @@ Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren ya
 ## 📂 Proje Repo Yapısı
 ```
 bitirme-tezi/
-│── data/                  # Veri kümesi
-│   ├── raw/               # Ham veri seti (orijinal hali)
-│   ├── processed/         # Ön işlenmiş ve dönüştürülmüş veriler
-│   ├── features/          # Özellik çıkarılmış veriler
-│── src/                   # Kaynak kodlar (ana Python scriptleri)
-│   ├── preprocessing.py   # Veri temizleme ve ön işleme
-│   ├── feature_extraction.py  # Özellik çıkarımı (MFCC, spectrogram vb.)
-|   ├── model.py           # İlk model denemesi
-│── notebooks/             # Jupyter Notebook'lar (Keşifsel analiz vb.)
-│   ├── rabia_workspace    # Local çalışma alanı, git tarafından takip edilmez
-│   ├── sude_workspace     # Local çalışma alanı, git tarafından takip edilmez
-│── docs/                  # Proje dökümantasyonu
-│   ├── README.md          # Proje açıklamaları
+│── base-model/            # xxx
+│   ├── xxx/               # xxx
+│── COSMIC/                #
+│   ├── erc-training/    
+│   ├── xxx.py             # xxx
+│── DialogueRNN/           # xxx
+│   ├── xxx    # xxx
+│── RoBERTa/               # xxx
+│   ├── README.md          # xxx
 │── environment.yml        # Conda ortamının paket bilgileri
 │── .gitignore             # İstenmeyen dosyaları git takibinden çıkarmak için
 ```
