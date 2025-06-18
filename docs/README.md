@@ -12,10 +12,19 @@ Bu proje, diyalog verileri üzerinde duygu analizini
 Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren yapay sinir ağlarının performanslarının değerlendirilerek; metin, ses ve görüntü modaliteleri için optimal yöntemlerin belirlenmesini hedefler. 
 
 **Kullanılan Veri Setleri**
-- **MELD**:
-- **IEMOCAP**:
-
+**MELD**
+- 'Friends' televizyon dizisinden toplanmış 1433 diyaloga ait 13000'den fazla ifadeden oluşur.
+- Her bir ifade için pozitif, negatif ve nötr olmak üzere 3 duygu sınıfı bulunur.
+- Her bir ifade için sinir, tiksinti, üzüntü, mutluluk, korku, nötr, şaşkınlık olmak üzere 7 duygu etiketi bulunur.
+- Aşağıda sırasıyla MELD veri setinden örnek bir diyalog, veri setindeki konuşmacıların duygu dağılım grafiği, konuşmacı his dağılımı ve konuşmacıların ifade dağılım yüzdesi bulunmaktadır. 
 ![MELD_diyalog_ornegi](meld_diyalog_ornegi.jpg)
+![MELD_konusmacı duygu dagilimi](meld_konusmaci_duygu_dagilimi.jpg)
+![MELD_konusmaci his dagilimi](meld_konusmaci_his_dagilimi.jpg)
+![MELD_konusmaci ifade dagilim yuzdesi](meld_konusmaci_ifade_dagilim_yuzdesi.jpg)
+
+**IEMOCAP**
+- 
+
 
 **Kullanılan Ana Modeller**
 - bcLSTM
