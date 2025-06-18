@@ -37,7 +37,7 @@ bitirme-tezi/
 ```
 ---
 ## Sonuçlar
-**bcLSTM Modelinin MELD veri seti üzerinde duygu analizinde sınıflara ait f1-skorları ve doğruluk değerleri**
+**---bcLSTM Modelinin MELD veri seti üzerinde duygu analizinde sınıflara ait f1-skorları ve doğruluk değerleri---**
 | Modeller / Duygular           | nötr   | şaşkınlık | korku | üzüntü | sevinç | tiksinti | sinir | doğruluk |
 |-------------------------------|--------|-----------|-------|--------|--------|----------|-------|----------|
 | Base model text               | 0.6498 | 0.00      | 0.00  | 0.00   | 0.00   | 0.00     | 0.00  | 0.4812   |
@@ -45,7 +45,7 @@ bitirme-tezi/
 | Bimodel base text+audio       | 0.6518 | 0.0137    | 0.00  | 0.00   | 0.1240 | 0.00     | 0.272 | 0.4816   |
 
 
-**MELD ve IEMOCAP veri setinde DialogueRNN ve COSMIC modellerinin duygu sınıflandırmasına ait f1-skor değerleri**
+**---MELD ve IEMOCAP veri setinde DialogueRNN ve COSMIC modellerinin duygu sınıflandırmasına ait f1-skor değerleri---**
 
 | Modeller / Veri Setleri      | MELD text | MELD audio | MELD multimodal | IEMOCAP |
 |-------------------------------|-----------|------------|-----------------|---------|
