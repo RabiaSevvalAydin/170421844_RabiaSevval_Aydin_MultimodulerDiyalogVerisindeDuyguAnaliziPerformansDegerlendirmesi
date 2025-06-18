@@ -16,7 +16,9 @@ Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren ya
 - 'Friends' televizyon dizisinden toplanmış 1433 diyaloga ait 13000'den fazla ifadeden oluşur.
 - Her bir ifade için pozitif, negatif ve nötr olmak üzere 3 duygu sınıfı bulunur.
 - Her bir ifade için sinir, tiksinti, üzüntü, mutluluk, korku, nötr, şaşkınlık olmak üzere 7 duygu etiketi bulunur.
-- Aşağıda sırasıyla MELD veri setinden örnek bir diyalog, veri setindeki konuşmacıların duygu dağılım grafiği, konuşmacı his dağılımı ve konuşmacıların ifade dağılım yüzdesi bulunmaktadır. 
+- Aşağıda sırasıyla MELD veri setinden örnek bir diyalog, veri setindeki konuşmacıların duygu dağılım grafiği, konuşmacı his dağılımı ve konuşmacıların ifade dağılım yüzdesi bulunmaktadır.
+![MELD_diyalog_ornegi](meld1.png)
+![MELD_diyalog_ornegi](meld2.png)
 ![MELD_diyalog_ornegi](meld_diyalog_ornegi.jpg)
 ![MELD_konusmacı duygu dagilimi](meld_konusmaci_duygu_dagilimi.jpg)
 ![MELD_konusmaci his dagilimi](meld_konusmaci_his_dagilimi.jpg)
