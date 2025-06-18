@@ -79,3 +79,48 @@ bitirme-tezi/
 | DialogueRNN                   | 57.27     | 43.24      | 57.68           | 60.60   |
 | RoBERTa + DialogueRNN         | 47.10     | 47.47      | 50.40           | –       |
 | RoBERTa + COSMIC              | 64.36     | –          | –               | 66.34   |
+
+---
+# COSMIC: COmmonSense knowledge for eMotion Identification in Conversations
+
+## Çalıştırma
+Öncelikle RoBERTa ve COMET özelliklerini [buradan](https://drive.google.com/file/d/1TQYQYCoPtdXN2rQ1mR2jisjUztmOzfZr/view) indirin ve bunları COSMIC/erc-training'de uygun dizinlerde saklayın. Daha sonra iki veri kümesi üzerinde eğitim ve değerlendirme şu şekilde yapılacaktır:
+```bash
+python train_iemocap.py --active-listener
+python train_meld.py --active-listener --attention simple --dropout 0.5 --rec_dropout 0.3 --lr 0.0001 --mode1 2 --classify emotion --mu 0 --l2 0.00003 --epochs 60
+```
+---
+# DialogueRNN: An Attentive RNN for Emotion Detection in Conversations
+
+## Gereklilikler
+- Python 3
+- PyTorch 1.0
+- Pandas 0.23
+- Scikit-Learn 0.20
+- TensorFlow (isteğe bağlı)
+- tensorboardX (isteğe bağlı)
+
+## Veri Seti Özellikleri
+Lütfen DialogueRNN_features.zip'in içeriğini çıkarın.
+
+## Çalıştırma
+```bash
+python train_IEMOCAP.py 
+python train_MELD.py
+```
+---
+# RoBERTa
+RoBERta modelini eğitmek için önce önceden eğitilmiş ağırlıkları [buradan](https://drive.google.com/file/d/1TQYQYCoPtdXN2rQ1mR2jisjUztmOzfZr/view) indirin ve roberta-large/'nin bu dizine yerleştirilmesi için tar dosyasını açın. Ardından, IEMOCAP veri kümesi için bağlamdan bağımsız özellik vektörlerini aşağıdaki gibi ön işleyebilir, eğitebilir ve ayıklayabilirsiniz:
+
+```bash
+python roberta_init_meld.py
+python roberta_preprocess_meld.sh
+python roberta_train_meld.sh
+python roberta_feature_extract_meld.py
+```
+
+Elde edilen özellik vektörlerinin boyutlarını düşürmek ve DialogueRNN ile uyumlu hale getirmek için:
+```bash
+python dimensionality_reduction.py
+```
+
