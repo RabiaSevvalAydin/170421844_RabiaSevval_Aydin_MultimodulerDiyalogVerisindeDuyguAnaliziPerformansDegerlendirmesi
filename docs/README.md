@@ -46,15 +46,10 @@ Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren ya
 ## 📂 Proje Repo Yapısı
 ```
 bitirme-tezi/
-│── base-model/            # xxx
-│   ├── xxx/               # xxx
-│── COSMIC/                #
-│   ├── erc-training/    
-│   ├── xxx.py             # xxx
-│── DialogueRNN/           # xxx
-│   ├── xxx    # xxx
-│── RoBERTa/               # xxx
-│   ├── README.md          # xxx
+│── base-model/            
+│── COSMIC/                
+│── DialogueRNN/           
+│── RoBERTa/               
 │── environment.yml        # Conda ortamının paket bilgileri
 │── .gitignore             # İstenmeyen dosyaları git takibinden çıkarmak için
 ```
