@@ -1,8 +1,12 @@
 # Bitirme Projesi - Multimodüler Duygu Analizi ile Yapay Sinir Ağları
 **Öğrenciler**: Rabia Şevval Aydın, Sude Nur Tungaç
+
 **Danışman**: Doç. Dr. Ayşe Berna Altınel
+
 **Tarih**: Haziran 2025
+
 ---
+
 ## Proje Hakkında
 Bu proje, diyalog verileri üzerinde duygu analizini
 Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren yapay sinir ağlarının performanslarının değerlendirilerek; metin, ses ve görüntü modaliteleri için optimal yöntemlerin belirlenmesini hedefler. 
