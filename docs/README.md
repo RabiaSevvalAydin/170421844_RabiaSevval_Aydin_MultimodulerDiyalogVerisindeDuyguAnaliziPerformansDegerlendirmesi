@@ -11,19 +11,30 @@
 Bu proje, diyalog verileri üzerinde duygu analizini
 Bu proje, diyalog verileri üzerinde duygu analizi görevini gerçekleştiren yapay sinir ağlarının performanslarının değerlendirilerek; metin, ses ve görüntü modaliteleri için optimal yöntemlerin belirlenmesini hedefler. 
 
-**Kullanılan Veri Setleri**
-**MELD**
+**### Kullanılan Veri Setleri**
+**MELD-Multimodal Emotion Lines Dateset**
 - 'Friends' televizyon dizisinden toplanmış 1433 diyaloga ait 13000'den fazla ifadeden oluşur.
+- İkiden fazla kişinin yer aldığı diyalogları içerir.
 - Her bir ifade için pozitif, negatif ve nötr olmak üzere 3 duygu sınıfı bulunur.
 - Her bir ifade için sinir, tiksinti, üzüntü, mutluluk, korku, nötr, şaşkınlık olmak üzere 7 duygu etiketi bulunur.
 - Aşağıda sırasıyla MELD veri setinden örnek bir diyalog, veri setindeki konuşmacıların duygu dağılım grafiği, konuşmacı his dağılımı ve konuşmacıların ifade dağılım yüzdesi bulunmaktadır.
-![MELD_diyalog_ornegi](meld_diyalog_ornegi.png)
-![MELD_konusmacı duygu dagilimi](meld_konusmaci_duygu_dagilimi.png)
+
+![MELD_diyalog_ornegi](meld_diyalog_örnegi.png)
+
+
 ![MELD_konusmaci his dagilimi](meld_konusmaci_his_dagilimi.png)
+
+![MELD_konusmacı duygu dagilimi](meld_konusmaci_duygu_dagilimi.png)
+
 ![MELD_konusmaci ifade dagilim yuzdesi](meld_konusmaci_ifade_dagilim_yuzdesi.png)
 
-**IEMOCAP**
-- 
+**IEMOCAP-Interactive Emotional Dyadic Motion Capture**
+- 5 erkek ve 5 kadından oluşan bir gruba ait ikili diyalog çiftlerinii içerir.
+- 151 diyalog, 302 video kaydından toplamda 10039 veri örneği sunar.
+- Senaryoya bağlı ya da doğaçlama diyaloglar içerir.
+- Her bir ifade için sinir, heyecan, korku, üzüntü, şaşkınlık, mutluluk, memnuniyetsizlik, hayal kırıklığı ve nötr olmak üzere 9 duygu etiketi bulunur.
+
+![IEMOCAP veri görseli](iemocap_duygu_dagilimi.png)
 
 
 **Kullanılan Ana Modeller**
