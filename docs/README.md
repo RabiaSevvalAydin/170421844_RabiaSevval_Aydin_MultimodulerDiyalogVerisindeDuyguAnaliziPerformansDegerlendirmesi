@@ -50,7 +50,6 @@ bitirme-tezi/
 │── COSMIC/                
 │── DialogueRNN/           
 │── RoBERTa/               
-│── environment.yml        # Conda ortamının paket bilgileri
 │── .gitignore             # İstenmeyen dosyaları git takibinden çıkarmak için
 ```
 ---
