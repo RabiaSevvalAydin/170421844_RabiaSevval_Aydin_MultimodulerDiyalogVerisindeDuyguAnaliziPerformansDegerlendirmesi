@@ -91,7 +91,7 @@ python train_meld.py --active-listener --attention simple --dropout 0.5 --rec_dr
 - tensorboardX (isteğe bağlı)
 
 ## Veri Seti Özellikleri
-Lütfen DialogueRNN_features.zip'in içeriğini çıkarın.
+Lütfen [buradan](https://drive.google.com/file/d/1Ip1om65jOomVRtKKwc8KbDw4uJBsLSte/view?usp=sharing) DialogueRNN_features.zip'i indirin ve zip içeriklerini çıkarın.
 
 ## Çalıştırma
 ```bash
