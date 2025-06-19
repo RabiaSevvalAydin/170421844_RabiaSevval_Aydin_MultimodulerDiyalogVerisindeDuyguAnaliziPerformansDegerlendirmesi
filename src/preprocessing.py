@@ -1,1 +1,0 @@
-# Verileri temizleme, normalizasyon, eksik değer doldurma gibi işlemler burada olacak
